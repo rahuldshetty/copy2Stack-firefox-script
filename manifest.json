@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "copy2Stack",
+  "version": "1.0.0",
+
+  "description": "A Stackoverflow Copy Code Extension",
+
+  "icons": {
+    "48": "icons/b48.png",
+    "96": "icons/b96.png",
+    "19": "icons/b19.png",
+    "128": "icons/b128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.stackoverflow.com/*"],
+      "js": ["app.js"]
+    }
+  ]
+
+}
